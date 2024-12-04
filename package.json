@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "c8": {
+    "reporter": ["lcov"],
+    "report-dir": "./coverage"
+  },
   "scripts": {
     "test": "./node_modules/c8/bin/c8.js ./node_modules/mocha/bin/mocha.js"
   },
