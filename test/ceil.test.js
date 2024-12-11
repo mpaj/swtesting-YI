@@ -21,8 +21,8 @@ describe('ceil', function() {
         expect(ceil(0.009,2)).to.eq(0.01);
     });
     it('should round up with 3 precision', function() {
-        expect(ceil(3.0008,2)).to.eq(3.001);
-        expect(ceil(0.009,2)).to.eq(0.1);
+        expect(ceil(3.0008,3)).to.eq(3.001);
+        expect(ceil(0.009,3)).to.eq(0.009);
     });
     it('should round up with negative precision', function() {
         expect(ceil(3.0008,-1)).to.eq(10);
