@@ -9,7 +9,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    continue-on-error: true
+    #continue-on-error: true
 
     strategy:
       matrix:
@@ -30,6 +30,7 @@ jobs:
     - run: npm test
 
     - name: Upload Coverage to Coveralls
+      if: always()
       uses: coverallsapp/github-action@v2.3.4
       with:
         path-to-lcov: coverage/lcov.info
