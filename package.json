@@ -1,6 +1,6 @@
 {
   "name": "swtesting-yi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -9,7 +9,7 @@
     "report-dir": "./coverage"
   },
   "scripts": {
-    "test": "./node_modules/c8/bin/c8.js ./node_modules/mocha/bin/mocha.js"
+    "test": "./node_modules/c8/bin/c8.js --exclude src/.internal ./node_modules/mocha/bin/mocha.js"
   },
   "author": "",
   "license": "ISC",
